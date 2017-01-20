@@ -10,22 +10,26 @@
 
 @interface GameCharacter ()
 
-@property  (readwrite)NSString *name;
-    @property NSUInteger attackPower;
-    @property NSInteger hp;
-    @property NSUInteger magicPower;
-    @property NSUInteger mana;
+@property  NSString *name;
+@property NSUInteger attackPower;
+@property NSInteger hp;
+@property NSUInteger magicPower;
+@property NSUInteger mana;
 
 @end
 
+
 @implementation GameCharacter
 
-- (GameCharacter*)initWithProperty:(NSString*)name
-                      ap:(NSUInteger)ap
-                      hp:(NSInteger)hp
-                      mp:(NSUInteger)mp
-                      mn:(NSUInteger)mn
+
+- (instancetype)initWithProperty:(NSString*)name
+                              ap:(NSUInteger)ap
+                              hp:(NSInteger)hp
+                              mp:(NSUInteger)mp
+                             mn:(NSUInteger)mn
 {
+    self = [super init];
+    
     self.name = name;
     self.attackPower = ap;
     self.hp = hp;

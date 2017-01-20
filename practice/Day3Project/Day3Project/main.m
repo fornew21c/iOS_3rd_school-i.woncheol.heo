@@ -27,7 +27,7 @@ int main(int argc, const char * argv[]) {
     NSLog(@"What is your name? %@", warrior1.name);
   //  NSLog(@"How many is your attackpower? %@", warrior1.attackPower);
     
-    
+
     Wizard *wizard1 = [[Wizard alloc] init];
 //    wizard1.name = @"해골마법사";
 //    wizard1.attackPower = 70;
@@ -44,5 +44,6 @@ int main(int argc, const char * argv[]) {
     
  //  [warrior1 physicalAttack:wizard1];
   //  [warrior1 physicalAttack:wizard1];
+    //NSNumber
     return 0;
 }
