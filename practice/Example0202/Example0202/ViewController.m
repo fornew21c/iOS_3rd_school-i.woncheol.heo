@@ -71,38 +71,108 @@
 //    [self.view addSubview:subview2];
 
 
-    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-50 , self.view.center.y-50, 90, 10)];
-    subview1.backgroundColor = [UIColor redColor];
-    [self.view addSubview:subview1];
-    
-    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-50 , self.view.center.y-40, 10, 90)];
-    subview2.backgroundColor = [UIColor grayColor];
-    [self.view addSubview:subview2];
-    
-    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-40 , self.view.center.y+40, 90, 10)];
-    subview3.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:subview3];
-    
-    UIView *subview4 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x+40 , self.view.center.y-50, 10, 90)];
-    subview4.backgroundColor = [UIColor blueColor];
-    [self.view addSubview:subview4];
-
-    
-//    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 80)];
+//    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-50 , self.view.center.y-50, 90, 10)];
 //    subview1.backgroundColor = [UIColor redColor];
 //    [self.view addSubview:subview1];
 //    
-//    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 60, 60)];
-//    subview2.backgroundColor = [UIColor greenColor];
-//    [subview1 addSubview:subview2];
+//    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-50 , self.view.center.y-40, 10, 90)];
+//    subview2.backgroundColor = [UIColor grayColor];
+//    [self.view addSubview:subview2];
 //    
-//    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(80, 10, self.view.frame.size.width-90, 60)];
-//    subview3.backgroundColor = [UIColor blueColor];
-//    [subview1 addSubview:subview3];
+//    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-40 , self.view.center.y+40, 90, 10)];
+//    subview3.backgroundColor = [UIColor greenColor];
+//    [self.view addSubview:subview3];
+//    
+//    UIView *subview4 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x+40 , self.view.center.y-50, 10, 90)];
+//    subview4.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:subview4];
+
+    
+    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 80)];
+    subview1.backgroundColor = [UIColor redColor];
+    [self.view addSubview:subview1];
+    
+    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(10, 10, 60, 60)];
+    subview2.backgroundColor = [UIColor greenColor];
+    [subview1 addSubview:subview2];
+    
+    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(80, 10, self.view.frame.size.width-90, 40)];
+    subview3.backgroundColor = [UIColor blueColor];
+    [subview1 addSubview:subview3];
+    
+    UIView *subview4 = [[UIView alloc] initWithFrame:CGRectMake(80, 60, self.view.frame.size.width-90, 10)];
+    subview4.backgroundColor = [UIColor blueColor];
+    [subview1 addSubview:subview4];
+
+    
+//    UIView *subview1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 168)];
+//    subview1.backgroundColor = [UIColor grayColor];
+//    [self.view addSubview:subview1];
+//    
+//    UIView *subview2 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-40, 128, 80, 80)];
+//    subview2.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:subview2];
+//    
+//    UIView *subview3 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-40, 211, 80, 25)];
+//    subview3.backgroundColor = [UIColor greenColor];
+//    [self.view addSubview:subview3];
+//
+//    UIView *subview4 = [[UIView alloc] initWithFrame:CGRectMake(self.view.center.x-40, 238, 80, 13)];
+//    subview4.backgroundColor = [UIColor greenColor];
+//    [self.view addSubview:subview4];
+//    
+//    UIView *subview5 = [[UIView alloc] initWithFrame:CGRectMake(0, 268, self.view.frame.size.width/4, 45)];
+//    subview5.backgroundColor = [UIColor blackColor];
+//    [self.view addSubview:subview5];
+//
+//    UIView *subview6 = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/4, 268, self.view.frame.size.width/4, 45)];
+//    subview6.backgroundColor = [UIColor redColor];
+//    [self.view addSubview:subview6];
+//
+//    UIView *subview7 = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2, 268, self.view.frame.size.width/4, 45)];
+//    subview7.backgroundColor = [UIColor blueColor];
+//    [self.view addSubview:subview7];
+//    
+//    UIView *subview8 = [[UIView alloc] initWithFrame:CGRectMake(self.view.frame.size.width*0.75, 268, self.view.frame.size.width/4, 45)];
+//    subview8.backgroundColor = [UIColor greenColor];
+//    [self.view addSubview:subview8];
+//    
+//    UIView *subview9 = [[UIView alloc] initWithFrame:CGRectMake(5, 5, subview8.frame.size.width-10,15)];
+//    subview9.backgroundColor = [UIColor grayColor];
+//    [subview5 addSubview:subview9];
+//    
+//    UIView *subview10 = [[UIView alloc] initWithFrame:CGRectMake(5, 25, subview8.frame.size.width-10,15)];
+//    subview10.backgroundColor = [UIColor grayColor];
+//    [subview5 addSubview:subview10];
+//  
+//    UIView *subview11 = [[UIView alloc] initWithFrame:CGRectMake(5, 5, subview8.frame.size.width-10,15)];
+//    subview11.backgroundColor = [UIColor grayColor];
+//    [subview6 addSubview:subview11];
+//    
+//    UIView *subview12 = [[UIView alloc] initWithFrame:CGRectMake(5, 25, subview8.frame.size.width-10,15)];
+//    subview12.backgroundColor = [UIColor grayColor];
+//    [subview6 addSubview:subview12];
+//  
+//    UIView *subview13 = [[UIView alloc] initWithFrame:CGRectMake(5, 5, subview8.frame.size.width-10,15)];
+//    subview13.backgroundColor = [UIColor grayColor];
+//    [subview7 addSubview:subview13];
+//    
+//    UIView *subview14 = [[UIView alloc] initWithFrame:CGRectMake(5, 25, subview8.frame.size.width-10,15)];
+//    subview14.backgroundColor = [UIColor grayColor];
+//    [subview7 addSubview:subview14];
+//    
+//    UIView *subview15 = [[UIView alloc] initWithFrame:CGRectMake(5, 5, subview8.frame.size.width-10,15)];
+//    subview15.backgroundColor = [UIColor grayColor];
+//    [subview8 addSubview:subview15];
+//    
+//    UIView *subview16 = [[UIView alloc] initWithFrame:CGRectMake(5, 25, subview8.frame.size.width-10,15)];
+//    subview16.backgroundColor = [UIColor grayColor];
+//    [subview8 addSubview:subview16];
     
 
     
 
+    
 }
 
 
