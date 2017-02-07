@@ -144,7 +144,7 @@
     self.displayLabel1.text = @"";
     self.displayLabel1.textAlignment = 2;
     self.displayLabel1.textColor = [UIColor greenColor];
-    self.displayLabel1.font = [UIFont systemFontOfSize:20];
+    self.displayLabel1.font = [UIFont systemFontOfSize:15];
     [displayView addSubview:self.displayLabel1];
     
     self.displayLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(displayView.frame.size.width*0.25, displayView.frame.size.height*0.5, displayView.frame.size.width*0.75, displayView.frame.size.height * 0.5)];
@@ -157,13 +157,15 @@
     [displayView addSubview:self.displayLabel2];
     
     UIView *inputView = [[UIView alloc] initWithFrame:CGRectMake(margin*2, self.view.frame.size.height*0.84+30, drinkView.frame.size.width-margin*2, self.view.frame.size.height * 0.08)];
-    inputView.backgroundColor = [UIColor grayColor];
+    inputView.backgroundColor = [UIColor greenColor];
+//  inputView.alpha = 0.7;
     [self.view addSubview:(inputView)];
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn1.frame = CGRectMake(30, 10, inputView.frame.size.width/3 - 40, inputView.frame.size.height - 20);
     btn1.layer.borderWidth = 2;
-    btn1.backgroundColor = [UIColor cyanColor];
+    btn1.backgroundColor = [UIColor grayColor];
+    //btn1.alpha = 0.4;
     [btn1 setTitle:@"1000원" forState:UIControlStateNormal];
     [btn1 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn1 setTitleColor:[UIColor purpleColor] forState:UIControlStateHighlighted];
@@ -174,7 +176,8 @@
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn2.frame = CGRectMake(offsetX, 10, inputView.frame.size.width/3 - 40, inputView.frame.size.height - 20);
     btn2.layer.borderWidth = 2;
-    btn2.backgroundColor = [UIColor cyanColor];
+    btn2.backgroundColor = [UIColor grayColor];
+    //btn2.alpha = 0.4;
     [btn2 setTitle:@"500원" forState:UIControlStateNormal];
     [btn2 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn2 setTitleColor:[UIColor purpleColor] forState:UIControlStateHighlighted];
@@ -185,8 +188,8 @@
     UIButton *btn3 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     btn3.frame = CGRectMake(offsetX, 10, inputView.frame.size.width/3 - 40, inputView.frame.size.height - 20);
     btn3.layer.borderWidth = 2;
-    btn3.backgroundColor = [UIColor cyanColor];
-
+    btn3.backgroundColor = [UIColor grayColor];
+    //btn3.alpha = 0.4;
     [btn3 setTitle:@"100원" forState:UIControlStateNormal];
     [btn3 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn3 setTitleColor:[UIColor purpleColor] forState:UIControlStateHighlighted];
@@ -215,7 +218,7 @@
     
 }
 
-- (void) actionForBtn3Touch{
+- (void) actionForBtn3Touch {
     self.balance += 100;
     self.displayLabel1.text = @"";
     self.displayLabel2.text = [NSString stringWithFormat:@"잔액 : %lu 원", self.balance];
@@ -230,7 +233,7 @@
         
     }
     else {
-        self.displayLabel1.text = [NSString stringWithFormat:@"콜라가 나왔습니다. 맛있게 드세요."];
+        self.displayLabel1.text = [NSString stringWithFormat:@"콜라가 나왔습니다. 맛있게 드세요~!"];
         self.displayLabel2.text = [NSString stringWithFormat:@"잔액 : %lu 원", self.balance];
     }
 }
@@ -243,7 +246,7 @@
         
     }
     else {
-        self.displayLabel1.text = [NSString stringWithFormat:@"웰치스가 나왔습니다. 맛있게 드세요."];
+        self.displayLabel1.text = [NSString stringWithFormat:@"웰치스가 나왔습니다. 맛있게 드세요~!"];
         self.displayLabel2.text = [NSString stringWithFormat:@"잔액 : %lu 원", self.balance];
     }
 }
@@ -256,7 +259,7 @@
         
     }
     else {
-        self.displayLabel1.text = [NSString stringWithFormat:@"바리스타가 나왔습니다. 맛있게 드세요."];
+        self.displayLabel1.text = [NSString stringWithFormat:@"바리스타가 나왔습니다. 맛있게 드세요~!"];
         self.displayLabel2.text = [NSString stringWithFormat:@"잔액 : %lu 원", self.balance];
     }
 }
@@ -269,7 +272,7 @@
         
     }
     else {
-        self.displayLabel1.text = [NSString stringWithFormat:@"삼다수가 나왔습니다. 맛있게 드세요."];
+        self.displayLabel1.text = [NSString stringWithFormat:@"삼다수가 나왔습니다. 맛있게 드세요~!"];
         self.displayLabel2.text = [NSString stringWithFormat:@"잔액 : %lu 원", self.balance];
     }
 }
