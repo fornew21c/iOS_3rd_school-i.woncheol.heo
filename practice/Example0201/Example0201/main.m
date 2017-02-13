@@ -29,10 +29,10 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"5!: %lu",  [toolbox factorial:5]);
         
         //[toolbox game369:29];
-        //[toolbox printMultipleNumbers];
+        [toolbox printMultipleNumbers];
         //NSLog(@"Hello, World!");
-        [toolbox printStar:3];
-        [toolbox printReverseStar:5];
+        //[toolbox printStar:3];
+        //[toolbox printReverseStar:5];
         
     }
     return 0;
