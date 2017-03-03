@@ -13,6 +13,22 @@
 		4144D5211E49728A00AD329B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4144D51F1E49728A00AD329B /* Main.storyboard */; };
 		4144D5231E49728A00AD329B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4144D5221E49728A00AD329B /* Assets.xcassets */; };
 		4144D5261E49728A00AD329B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4144D5241E49728A00AD329B /* LaunchScreen.storyboard */; };
+		4171E1721E5FC52000F270AB /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4171E1711E5FC52000F270AB /* DataCenter.m */; };
+		4171E17F1E5FCC0000F270AB /* TableContents.m in Sources */ = {isa = PBXBuildFile; fileRef = 4171E1741E5FCC0000F270AB /* TableContents.m */; };
+		4171E1801E5FCC0000F270AB /* TableContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4171E1751E5FCC0000F270AB /* TableContents.xib */; };
+		4171E1811E5FCC0000F270AB /* AccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4171E1771E5FCC0000F270AB /* AccountInfo.m */; };
+		4171E1821E5FCC0000F270AB /* AccountInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4171E1781E5FCC0000F270AB /* AccountInfo.xib */; };
+		4171E1831E5FCC0000F270AB /* InternetLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4171E17A1E5FCC0000F270AB /* InternetLogView.m */; };
+		4171E1841E5FCC0000F270AB /* InternetLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4171E17B1E5FCC0000F270AB /* InternetLogView.xib */; };
+		4171E1851E5FCC0000F270AB /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4171E17D1E5FCC0000F270AB /* ImageView.m */; };
+		4171E1861E5FCC0000F270AB /* ImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4171E17E1E5FCC0000F270AB /* ImageView.xib */; };
+		4171E18C1E5FCC0D00F270AB /* cocacola.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4171E1871E5FCC0D00F270AB /* cocacola.jpg */; };
+		4171E18D1E5FCC0D00F270AB /* image1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4171E1881E5FCC0D00F270AB /* image1.jpeg */; };
+		4171E18E1E5FCC0D00F270AB /* trashcan.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171E1891E5FCC0D00F270AB /* trashcan.png */; };
+		4171E18F1E5FCC0D00F270AB /* Arrowf.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171E18A1E5FCC0D00F270AB /* Arrowf.png */; };
+		4171E1901E5FCC0D00F270AB /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4171E18B1E5FCC0D00F270AB /* arrow.png */; };
+		41B4CBF21E5AD4BF0060B84F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CBF01E5AD4BF0060B84F /* SignUpViewController.m */; };
+		41B4CBF31E5AD4BF0060B84F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41B4CBF11E5AD4BF0060B84F /* SignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,28 @@
 		4144D5221E49728A00AD329B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4144D5251E49728A00AD329B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4144D5271E49728A00AD329B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4171E1701E5FC52000F270AB /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		4171E1711E5FC52000F270AB /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		4171E1731E5FCC0000F270AB /* TableContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableContents.h; sourceTree = "<group>"; };
+		4171E1741E5FCC0000F270AB /* TableContents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableContents.m; sourceTree = "<group>"; };
+		4171E1751E5FCC0000F270AB /* TableContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableContents.xib; sourceTree = "<group>"; };
+		4171E1761E5FCC0000F270AB /* AccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInfo.h; sourceTree = "<group>"; };
+		4171E1771E5FCC0000F270AB /* AccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInfo.m; sourceTree = "<group>"; };
+		4171E1781E5FCC0000F270AB /* AccountInfo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountInfo.xib; sourceTree = "<group>"; };
+		4171E1791E5FCC0000F270AB /* InternetLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InternetLogView.h; sourceTree = "<group>"; };
+		4171E17A1E5FCC0000F270AB /* InternetLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InternetLogView.m; sourceTree = "<group>"; };
+		4171E17B1E5FCC0000F270AB /* InternetLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InternetLogView.xib; sourceTree = "<group>"; };
+		4171E17C1E5FCC0000F270AB /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		4171E17D1E5FCC0000F270AB /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		4171E17E1E5FCC0000F270AB /* ImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageView.xib; sourceTree = "<group>"; };
+		4171E1871E5FCC0D00F270AB /* cocacola.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cocacola.jpg; sourceTree = "<group>"; };
+		4171E1881E5FCC0D00F270AB /* image1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpeg; sourceTree = "<group>"; };
+		4171E1891E5FCC0D00F270AB /* trashcan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trashcan.png; sourceTree = "<group>"; };
+		4171E18A1E5FCC0D00F270AB /* Arrowf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrowf.png; sourceTree = "<group>"; };
+		4171E18B1E5FCC0D00F270AB /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		41B4CBEF1E5AD4BF0060B84F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		41B4CBF01E5AD4BF0060B84F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		41B4CBF11E5AD4BF0060B84F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +100,30 @@
 				4144D51A1E49728A00AD329B /* AppDelegate.m */,
 				4144D51C1E49728A00AD329B /* ViewController.h */,
 				4144D51D1E49728A00AD329B /* ViewController.m */,
+				41B4CBEF1E5AD4BF0060B84F /* SignUpViewController.h */,
+				41B4CBF01E5AD4BF0060B84F /* SignUpViewController.m */,
+				41B4CBF11E5AD4BF0060B84F /* SignUpViewController.xib */,
+				4171E1701E5FC52000F270AB /* DataCenter.h */,
+				4171E1711E5FC52000F270AB /* DataCenter.m */,
+				4171E1731E5FCC0000F270AB /* TableContents.h */,
+				4171E1741E5FCC0000F270AB /* TableContents.m */,
+				4171E1751E5FCC0000F270AB /* TableContents.xib */,
+				4171E1761E5FCC0000F270AB /* AccountInfo.h */,
+				4171E1771E5FCC0000F270AB /* AccountInfo.m */,
+				4171E1781E5FCC0000F270AB /* AccountInfo.xib */,
+				4171E1791E5FCC0000F270AB /* InternetLogView.h */,
+				4171E17A1E5FCC0000F270AB /* InternetLogView.m */,
+				4171E17B1E5FCC0000F270AB /* InternetLogView.xib */,
+				4171E17C1E5FCC0000F270AB /* ImageView.h */,
+				4171E17D1E5FCC0000F270AB /* ImageView.m */,
+				4171E17E1E5FCC0000F270AB /* ImageView.xib */,
 				4144D51F1E49728A00AD329B /* Main.storyboard */,
 				4144D5221E49728A00AD329B /* Assets.xcassets */,
+				4171E1871E5FCC0D00F270AB /* cocacola.jpg */,
+				4171E1881E5FCC0D00F270AB /* image1.jpeg */,
+				4171E1891E5FCC0D00F270AB /* trashcan.png */,
+				4171E18A1E5FCC0D00F270AB /* Arrowf.png */,
+				4171E18B1E5FCC0D00F270AB /* arrow.png */,
 				4144D5241E49728A00AD329B /* LaunchScreen.storyboard */,
 				4144D5271E49728A00AD329B /* Info.plist */,
 				4144D5161E49728A00AD329B /* Supporting Files */,
@@ -139,6 +199,16 @@
 			files = (
 				4144D5261E49728A00AD329B /* LaunchScreen.storyboard in Resources */,
 				4144D5231E49728A00AD329B /* Assets.xcassets in Resources */,
+				4171E1841E5FCC0000F270AB /* InternetLogView.xib in Resources */,
+				4171E18D1E5FCC0D00F270AB /* image1.jpeg in Resources */,
+				4171E1801E5FCC0000F270AB /* TableContents.xib in Resources */,
+				4171E1901E5FCC0D00F270AB /* arrow.png in Resources */,
+				4171E1861E5FCC0000F270AB /* ImageView.xib in Resources */,
+				4171E18F1E5FCC0D00F270AB /* Arrowf.png in Resources */,
+				4171E18E1E5FCC0D00F270AB /* trashcan.png in Resources */,
+				4171E18C1E5FCC0D00F270AB /* cocacola.jpg in Resources */,
+				4171E1821E5FCC0000F270AB /* AccountInfo.xib in Resources */,
+				41B4CBF31E5AD4BF0060B84F /* SignUpViewController.xib in Resources */,
 				4144D5211E49728A00AD329B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,7 +221,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4144D51E1E49728A00AD329B /* ViewController.m in Sources */,
+				4171E1721E5FC52000F270AB /* DataCenter.m in Sources */,
+				4171E1831E5FCC0000F270AB /* InternetLogView.m in Sources */,
 				4144D51B1E49728A00AD329B /* AppDelegate.m in Sources */,
+				4171E1811E5FCC0000F270AB /* AccountInfo.m in Sources */,
+				41B4CBF21E5AD4BF0060B84F /* SignUpViewController.m in Sources */,
+				4171E17F1E5FCC0000F270AB /* TableContents.m in Sources */,
+				4171E1851E5FCC0000F270AB /* ImageView.m in Sources */,
 				4144D5181E49728A00AD329B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +383,7 @@
 				4144D52C1E49728A00AD329B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

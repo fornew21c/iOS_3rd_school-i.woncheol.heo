@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SignUpViewController.h"
+#import "DataCenter.h"
+#import "TableContents.h"
 
 @interface ViewController ()
 <UITextFieldDelegate, UIScrollViewDelegate>
@@ -17,6 +20,7 @@
 @property NSString *myId;
 @property NSString *password;
 @property UILabel *resultLabel;
+@property UIView *footView;
 
 
 @end
@@ -109,29 +113,97 @@
     [registerBtn setTitle:@"Sign Up" forState:UIControlStateNormal];
     [registerBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     registerBtn.layer.borderWidth = 1;
+    [registerBtn addTarget:self action:@selector(signUpBtnTouched:) forControlEvents:UIControlEventTouchUpInside];
     [self.scrollView addSubview:registerBtn];
     
+    self.footView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height-50, self.view.frame.size.width, 50)];
+    self.footView.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:self.footView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getNoti:) name:@"notiKey" object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(getSystemNoti:) name:UIKeyboardWillShowNotification object:nil];
+   [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(getSystemNoti2:) name:UIKeyboardWillHideNotification object:nil];
 }
 
+- (void)getSystemNoti:(NSNotification *) notiSender
+{
+   
+    CGSize keyboardSize = [[notiSender.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGRect originFrame = self.footView.frame;
+    
+    [UIView animateWithDuration:5 animations:^{
+        //NSLog(@"%ld",originFrame.origin.y - keyboardSize.height);
+        self.footView.frame = CGRectMake(originFrame.origin.x, originFrame.origin.y - keyboardSize.height, originFrame.size.width, originFrame.size.height);
+    }];
+}
+
+- (void)getSystemNoti2:(NSNotification *) notiSender
+{
+    
+    CGSize keyboardSize = [[notiSender.userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGRect originFrame = self.footView.frame;
+    
+    [UIView animateWithDuration:5 animations:^{
+        //NSLog(@"%ld",originFrame.origin.y - keyboardSize.height);
+        self.footView.frame = CGRectMake(originFrame.origin.x, originFrame.origin.y + keyboardSize.height, originFrame.size.width, originFrame.size.height);
+    }];
+}
+
+
+- (void)getNoti:(NSNotification *) notiSender {
+    NSLog(@"Notification call");
+    NSLog(@"object: %@", notiSender.object);
+    NSLog(@"dictionary: %@", notiSender.userInfo);
+}
 - (void)loginBtnTouched:(UIButton*) sender
 {
-    self.myId = @"fornew21c";
-    self.password = @"1234";
+//    self.myId = @"fornew21c";
+//    self.password = @"1234";
     
     [self.scrollView setContentOffset:CGPointMake(0, 20) animated:YES];
     
 
-    if([self.myId isEqualToString:self.idTextField.text] && [self.password isEqualToString:self.pwTextField.text])
+//    if([self.myId isEqualToString:self.idTextField.text] && [self.password isEqualToString:self.pwTextField.text])
+//    {
+//        self.resultLabel.text = @"로그인에 성공하셨습니다.";
+//    }
+//    else if(![self.myId isEqualToString:self.idTextField.text]) {
+//        self.resultLabel.text = @"ID가 존재하지 않습니다.";
+//    }
+//    else if(![self.password isEqualToString:self.pwTextField.text]) {
+//        self.resultLabel.text = @"비밀번호가 틀립니다.";
+//    }
+    
+    [DataCenter sharedInstance].ID = [[NSUserDefaults standardUserDefaults] objectForKey:@"ID"];
+    [DataCenter sharedInstance].PW = [[NSUserDefaults standardUserDefaults] objectForKey:@"PW"];
+    
+    if( [[DataCenter sharedInstance].ID isEqualToString:self.idTextField.text] && [[DataCenter sharedInstance].PW  isEqualToString:self.pwTextField.text])
     {
         self.resultLabel.text = @"로그인에 성공하셨습니다.";
+        UIAlertController *alert=   [UIAlertController
+                                      alertControllerWithTitle:@"로그인 성공"
+                                      message:@"초기화면으로 이동합니다."
+                                      preferredStyle:UIAlertControllerStyleAlert];
+        
+        [self presentViewController:alert animated:YES completion:nil];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [alert dismissViewControllerAnimated:YES completion:nil];
+            TableContents *tableContents = [[TableContents alloc] init];
+            [self.navigationController pushViewController:tableContents animated:YES];
+        });
     }
-    else if(![self.myId isEqualToString:self.idTextField.text]) {
+    else if(![[DataCenter sharedInstance].ID isEqualToString:self.idTextField.text]) {
         self.resultLabel.text = @"ID가 존재하지 않습니다.";
     }
-    else if(![self.password isEqualToString:self.pwTextField.text]) {
+    else if(![[DataCenter sharedInstance].PW  isEqualToString:self.pwTextField.text]) {
         self.resultLabel.text = @"비밀번호가 틀립니다.";
     }
-    
+}
+
+- (void)signUpBtnTouched:(UIButton *) sender
+{
+    SignUpViewController *signUpVC = [[SignUpViewController alloc] initWithNibName:@"SignUpViewController" bundle:nil];
+    [self.navigationController pushViewController:signUpVC animated:YES];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -177,6 +249,10 @@
     }
     else if(textField.tag == 2) {
         [self.pwTextField resignFirstResponder];
+//        [UIView animateWithDuration:1 animations:^{
+//            CGRect originFrame = self.footView.frame;
+//            self.footView.frame = CGRectMake(originFrame.origin.x, self.view.frame.size.height - 50, originFrame.size.width, originFrame.size.height);
+//        }];
     }
     return YES;
 }
@@ -200,4 +276,10 @@
     }
     return YES;
 }
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+
 @end

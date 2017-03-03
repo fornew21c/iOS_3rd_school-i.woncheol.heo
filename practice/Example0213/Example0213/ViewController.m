@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+<UITableViewDataSource>
 @end
 
 @implementation ViewController
@@ -18,6 +18,9 @@
     [super loadView];
     
     NSLog(@"loadView");
+    UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    tableview.backgroundColor = [UIColor redColor];
+    [self.view addSubview:tableview];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

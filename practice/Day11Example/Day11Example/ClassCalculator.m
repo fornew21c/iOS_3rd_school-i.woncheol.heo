@@ -26,7 +26,6 @@
                         history:(NSUInteger)history
 {
     self = [super init];
-    
     self.korean = korean;
     self.math = math;
     self.english = english;

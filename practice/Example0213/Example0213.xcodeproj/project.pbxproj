@@ -13,6 +13,7 @@
 		41884D011E515C78000FC6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41884CFF1E515C78000FC6DF /* Main.storyboard */; };
 		41884D031E515C78000FC6DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41884D021E515C78000FC6DF /* Assets.xcassets */; };
 		41884D061E515C78000FC6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41884D041E515C78000FC6DF /* LaunchScreen.storyboard */; };
+		41884D141E51A31E000FC6DF /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41884D131E51A31E000FC6DF /* Property List.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		41884D021E515C78000FC6DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41884D051E515C78000FC6DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41884D071E515C78000FC6DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41884D131E51A31E000FC6DF /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				41884D021E515C78000FC6DF /* Assets.xcassets */,
 				41884D041E515C78000FC6DF /* LaunchScreen.storyboard */,
 				41884D071E515C78000FC6DF /* Info.plist */,
+				41884D131E51A31E000FC6DF /* Property List.plist */,
 				41884CF61E515C78000FC6DF /* Supporting Files */,
 			);
 			path = Example0213;
@@ -140,6 +143,7 @@
 			files = (
 				41884D061E515C78000FC6DF /* LaunchScreen.storyboard in Resources */,
 				41884D031E515C78000FC6DF /* Assets.xcassets in Resources */,
+				41884D141E51A31E000FC6DF /* Property List.plist in Resources */,
 				41884D011E515C78000FC6DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

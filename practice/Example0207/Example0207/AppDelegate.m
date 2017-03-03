@@ -14,9 +14,30 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    UINavigationController *naviCon = [storyboard instantiateInitialViewController];
+//    
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    self.window.rootViewController = naviCon;
+//    [self.window makeKeyAndVisible];
+    
+    //1. 윈도우 만들기
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //2. RootViewController 만들기
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIViewController *rootVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    //UIViewController *rootVC = [[UIViewController alloc] init];
+    //rootVC.view.backgroundColor = [UIColor whiteColor];
+    
+    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    //3. 윈도우에 RootViewController 지정
+    self.window.rootViewController = naviVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -46,6 +67,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 
 @end
