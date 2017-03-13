@@ -32,6 +32,7 @@
     
     //4. 윈도우에 네비케이션컨트롤러 객체를 RootViewController 지정
     self.window.rootViewController = naviVC;
+    
     [self.window makeKeyAndVisible];
     
     return YES;

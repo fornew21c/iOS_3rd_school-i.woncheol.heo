@@ -43,12 +43,19 @@
         [fileManager copyItemAtPath:bundlePath toPath:docuPath error:nil];
     }
     NSMutableArray *list = [NSMutableArray arrayWithContentsOfFile:docuPath];
-    //NSLog(@"list: %@", list);
-    //NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithContentsOfFile:docuPath];
-    // NSLog(@"dic: %@", dic);
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
    
-   [dic setObject:self.name.text forKey:@"Name"];
+    NSLog(@"addBtnTouched: %@", self.name.text);
+    if([self.name.text isEqualToString:@""]) {
+        NSLog(@"이름이 입력되지 않았습니다.");
+        return;
+    }
+
+    if([self.cellPhone.text isEqualToString:@""]) {
+        NSLog(@"전화번호가 입력되지 않았습니다.");
+        return;
+    }
+    [dic setObject:self.name.text forKey:@"Name"];
     [dic setObject:self.cellPhone.text forKey:@"cellPhone"];
     [list addObject:dic];
     

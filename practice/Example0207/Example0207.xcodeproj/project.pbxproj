@@ -61,6 +61,7 @@
 		4171E1891E5FCC0D00F270AB /* trashcan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trashcan.png; sourceTree = "<group>"; };
 		4171E18A1E5FCC0D00F270AB /* Arrowf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrowf.png; sourceTree = "<group>"; };
 		4171E18B1E5FCC0D00F270AB /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		419F91691E6E5FD300892832 /* Example0207.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Example0207.entitlements; sourceTree = "<group>"; };
 		41B4CBEF1E5AD4BF0060B84F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		41B4CBF01E5AD4BF0060B84F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		41B4CBF11E5AD4BF0060B84F /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
@@ -82,6 +83,7 @@
 			children = (
 				4144D5151E49728A00AD329B /* Example0207 */,
 				4144D5141E49728A00AD329B /* Products */,
+				419F916A1E6E5FD300892832 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +98,7 @@
 		4144D5151E49728A00AD329B /* Example0207 */ = {
 			isa = PBXGroup;
 			children = (
+				419F91691E6E5FD300892832 /* Example0207.entitlements */,
 				4144D5191E49728A00AD329B /* AppDelegate.h */,
 				4144D51A1E49728A00AD329B /* AppDelegate.m */,
 				4144D51C1E49728A00AD329B /* ViewController.h */,
@@ -139,6 +142,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		419F916A1E6E5FD300892832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,7 +180,13 @@
 				TargetAttributes = {
 					4144D5121E49728A00AD329B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = NN7QXHC8A3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Wallet = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -346,9 +362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = Example0207/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fornew21c.Example0207;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woncheol.heo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -357,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = NN7QXHC8A3;
 				INFOPLIST_FILE = Example0207/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fornew21c.Example0207;
+				PRODUCT_BUNDLE_IDENTIFIER = com.woncheol.heo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

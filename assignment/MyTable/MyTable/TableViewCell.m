@@ -34,11 +34,12 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
+    NSLog(@"initWithStyle");
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self createSubViews];
         //[self updateLayout];
-        [self test];
+        //[self test];
         //[self test];
     }
     return self;
@@ -59,7 +60,6 @@
     
     UILabel *rankLB = [[UILabel alloc] init];
     rankLB.textAlignment = NSTextAlignmentCenter;
-    rankLB = rankLB;
     rankLB.textColor = [UIColor lightGrayColor];
     [self.contentView addSubview:rankLB];
     self.rankLB = rankLB;
@@ -103,7 +103,7 @@
 }
 - (void) updateLayout
 {
-    const CGFloat MARGIN = 0;
+    CGFloat const MARGIN = 0;
     CGFloat offsetX = MARGIN;
     CGFloat offsetY = MARGIN;
     
@@ -131,9 +131,9 @@
    //self.rankLB.backgroundColor = [UIColor purpleColor];
    // self.iconImg.backgroundColor = [UIColor yellowColor];
     //self.contentsView.backgroundColor = [UIColor grayColor];
-    //self.titleLB.backgroundColor = [UIColor redColor];
-    //self.genreLB.backgroundColor = [UIColor blueColor];
-    //self.reviewImg.backgroundColor = [UIColor greenColor];
+    self.titleLB.backgroundColor = [UIColor redColor];
+    self.genreLB.backgroundColor = [UIColor blueColor];
+    self.reviewImg.backgroundColor = [UIColor greenColor];
     self.downloadBtn.backgroundColor = [UIColor greenColor];
 }
 

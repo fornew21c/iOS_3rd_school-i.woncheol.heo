@@ -20,38 +20,58 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    NSUInteger cnt = 5;
     self.view.backgroundColor = [UIColor blackColor];
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-30)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     //scrollView.backgroundColor = [UIColor greenColor];
-    [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width*3, self.scrollView.frame.size.height)];
+    [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width*5, self.scrollView.frame.size.height)];
     self.scrollView.pagingEnabled = YES;
     self.scrollView.delegate = self;
     [self.view addSubview:self.scrollView];
     
+    NSMutableArray *views;
+    //views addObject:<#(nonnull id)#>
+    for(NSUInteger i = 0; i < cnt; i++) {
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*i, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+        [views addObject:view];
+        if(i==0) {
+            view.backgroundColor = [UIColor redColor];
+        }
+        else if(i==1) {
+            view.backgroundColor = [UIColor greenColor];
+        }
+        else if(i==2) {
+            view.backgroundColor = [UIColor grayColor];
+        }
+        else if(i==3) {
+            view.backgroundColor = [UIColor purpleColor];
+        }
+        else if(i==4) {
+            view.backgroundColor = [UIColor lightGrayColor];
+        }
+        [self.scrollView addSubview:view];
+    }
     
-    UIView *view1 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
-    view1.backgroundColor = [UIColor redColor];
-    [self.scrollView addSubview:view1];
+
     
-    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
-    view2.backgroundColor = [UIColor greenColor];
-    [self.scrollView addSubview:view2];
-    
-    UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*2, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
-    view3.backgroundColor = [UIColor blueColor];
-    [self.scrollView addSubview:view3];
+//    UIView *view2 = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+//    view2.backgroundColor = [UIColor greenColor];
+//    [self.scrollView addSubview:view2];
+//    
+//    UIView *view3 = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*2, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+//    view3.backgroundColor = [UIColor blueColor];
+//    [self.scrollView addSubview:view3];
     
     
     
     [self.view addSubview:self.scrollView];
     
-    self.page = [[UIPageControl alloc] initWithFrame:CGRectMake(150, self.scrollView.frame.size.height, 100, 30)];
-    //page.backgroundColor = [UIColor blackColor];
-    self.page.numberOfPages = 3;
-    self.page.currentPage = 0;
-    [self.page addTarget:self action:@selector(pageChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:self.page];
+//    self.page = [[UIPageControl alloc] initWithFrame:CGRectMake(150, self.scrollView.frame.size.height, 100, 30)];
+//    //page.backgroundColor = [UIColor blackColor];
+//    self.page.numberOfPages = 3;
+//    self.page.currentPage = 0;
+//    [self.page addTarget:self action:@selector(pageChanged:) forControlEvents:UIControlEventValueChanged];
+//    [self.view addSubview:self.page];
     
     
    
@@ -86,6 +106,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSLog(@"scrollView.contentOffset.x: %lf", scrollView.contentOffset.x);
     if(scrollView.contentOffset.x == 0) {
         self.page.currentPage = 0;
     }

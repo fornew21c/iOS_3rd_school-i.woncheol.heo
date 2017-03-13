@@ -73,7 +73,7 @@
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
-    
+    cell.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     cell.textLabel.font = [UIFont systemFontOfSize:18];
     cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
     [cell.detailTextLabel setTextColor:[UIColor lightGrayColor]];

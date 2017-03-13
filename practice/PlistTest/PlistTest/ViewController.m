@@ -60,19 +60,13 @@
     if(cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-
-    
     
     NSArray *tmpList = [[DataCenter sharedInstance] getSample];
-    NSLog(@"list: %@", tmpList);
+   //NSLog(@"list: %@", tmpList);
     NSString *tempName = [[tmpList objectAtIndex:indexPath.row] objectForKey:@"Name"];
     NSString *tempCellPhone = [[tmpList objectAtIndex:indexPath.row] objectForKey:@"cellPhone"];
     
-//    cell.textLabel.text = [NSString stringWithFormat:@"이름: %@ 전화번호: %@",
-//                           [[[[DataCenter sharedInstance] getSample] objectAtIndex:indexPath.row] objectForKey:@"Name"], [[[[DataCenter sharedInstance] getSample] objectAtIndex:indexPath.row] objectForKey:@"cellPhone"]];
     cell.textLabel.text = [NSString stringWithFormat:@"이름: %@ 전화번호: %@", tempName, tempCellPhone];
-                          
-    
     
     return cell;
 }

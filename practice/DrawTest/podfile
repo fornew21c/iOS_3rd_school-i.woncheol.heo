@@ -1,0 +1,10 @@
+source ‘https://github.com/acerbetti/ACEDrawingView.git’
+platform :ios, ‘9.0’
+
+pod ‘ACEDrawingView’
+
+target “DrawTest” do
+
+    pod "ACEDrawingView"
+
+end
