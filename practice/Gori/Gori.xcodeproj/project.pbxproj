@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		413F1CCD1E8CBAAB0026F72F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F1CCC1E8CBAAB0026F72F /* main.m */; };
+		413F1CD01E8CBAAB0026F72F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F1CCF1E8CBAAB0026F72F /* AppDelegate.m */; };
+		413F1CD31E8CBAAB0026F72F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F1CD21E8CBAAB0026F72F /* ViewController.m */; };
+		413F1CD81E8CBAAB0026F72F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413F1CD71E8CBAAB0026F72F /* Assets.xcassets */; };
+		413F1CDB1E8CBAAB0026F72F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413F1CD91E8CBAAB0026F72F /* LaunchScreen.storyboard */; };
+		413F1CE41E8CBDBD0026F72F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413F1CE31E8CBDBD0026F72F /* Bolts.framework */; };
+		413F1CE61E8CBDD10026F72F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413F1CE51E8CBDD10026F72F /* FBSDKCoreKit.framework */; };
+		413F1CE81E8CBDDC0026F72F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413F1CE71E8CBDDC0026F72F /* FBSDKLoginKit.framework */; };
+		413F1CEA1E8CBDE70026F72F /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 413F1CE91E8CBDE60026F72F /* FBSDKShareKit.framework */; };
+		413F1CED1E8CC87C0026F72F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 413F1CEC1E8CC87C0026F72F /* MainViewController.m */; };
+		41C42C901E8E334B00B8A49B /* AMSlideMenuContentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C811E8E334B00B8A49B /* AMSlideMenuContentSegue.m */; };
+		41C42C911E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C831E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.m */; };
+		41C42C921E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C851E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.m */; };
+		41C42C931E8E334B00B8A49B /* AMSlideMenuMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C871E8E334B00B8A49B /* AMSlideMenuMainViewController.m */; };
+		41C42C941E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C8A1E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.m */; };
+		41C42C951E8E334B00B8A49B /* AMSlideMenuRightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C8C1E8E334B00B8A49B /* AMSlideMenuRightTableViewController.m */; };
+		41C42C961E8E334B00B8A49B /* UIViewController+AMSlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C8E1E8E334B00B8A49B /* UIViewController+AMSlideMenu.m */; };
+		41C42C991E8E336600B8A49B /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C981E8E336600B8A49B /* MainVC.m */; };
+		41C42C9B1E8E338500B8A49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41C42C9A1E8E338500B8A49B /* Main.storyboard */; };
+		41C42C9E1E8E33AD00B8A49B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C42C9D1E8E33AD00B8A49B /* LoginViewController.m */; };
+		41C42CA11E8E33E800B8A49B /* icon-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C42C9F1E8E33E800B8A49B /* icon-menu.png */; };
+		41C42CA21E8E33E800B8A49B /* icon-menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41C42CA01E8E33E800B8A49B /* icon-menu@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		413F1CC81E8CBAAB0026F72F /* Gori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		413F1CCC1E8CBAAB0026F72F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		413F1CCE1E8CBAAB0026F72F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		413F1CCF1E8CBAAB0026F72F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		413F1CD11E8CBAAB0026F72F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		413F1CD21E8CBAAB0026F72F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		413F1CD71E8CBAAB0026F72F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		413F1CDA1E8CBAAB0026F72F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		413F1CDC1E8CBAAB0026F72F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		413F1CE31E8CBDBD0026F72F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		413F1CE51E8CBDD10026F72F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		413F1CE71E8CBDDC0026F72F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		413F1CE91E8CBDE60026F72F /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		413F1CEB1E8CC87C0026F72F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		413F1CEC1E8CC87C0026F72F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		41C42C801E8E334B00B8A49B /* AMSlideMenuContentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuContentSegue.h; sourceTree = "<group>"; };
+		41C42C811E8E334B00B8A49B /* AMSlideMenuContentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuContentSegue.m; sourceTree = "<group>"; };
+		41C42C821E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftMenuSegue.h; sourceTree = "<group>"; };
+		41C42C831E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftMenuSegue.m; sourceTree = "<group>"; };
+		41C42C841E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuLeftTableViewController.h; sourceTree = "<group>"; };
+		41C42C851E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuLeftTableViewController.m; sourceTree = "<group>"; };
+		41C42C861E8E334B00B8A49B /* AMSlideMenuMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuMainViewController.h; sourceTree = "<group>"; };
+		41C42C871E8E334B00B8A49B /* AMSlideMenuMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuMainViewController.m; sourceTree = "<group>"; };
+		41C42C881E8E334B00B8A49B /* AMSlideMenuProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuProtocols.h; sourceTree = "<group>"; };
+		41C42C891E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightMenuSegue.h; sourceTree = "<group>"; };
+		41C42C8A1E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightMenuSegue.m; sourceTree = "<group>"; };
+		41C42C8B1E8E334B00B8A49B /* AMSlideMenuRightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSlideMenuRightTableViewController.h; sourceTree = "<group>"; };
+		41C42C8C1E8E334B00B8A49B /* AMSlideMenuRightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSlideMenuRightTableViewController.m; sourceTree = "<group>"; };
+		41C42C8D1E8E334B00B8A49B /* UIViewController+AMSlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AMSlideMenu.h"; sourceTree = "<group>"; };
+		41C42C8E1E8E334B00B8A49B /* UIViewController+AMSlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AMSlideMenu.m"; sourceTree = "<group>"; };
+		41C42C971E8E336600B8A49B /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		41C42C981E8E336600B8A49B /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		41C42C9A1E8E338500B8A49B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		41C42C9C1E8E33AD00B8A49B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		41C42C9D1E8E33AD00B8A49B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		41C42C9F1E8E33E800B8A49B /* icon-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-menu.png"; sourceTree = "<group>"; };
+		41C42CA01E8E33E800B8A49B /* icon-menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-menu@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		413F1CC51E8CBAAB0026F72F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413F1CEA1E8CBDE70026F72F /* FBSDKShareKit.framework in Frameworks */,
+				413F1CE41E8CBDBD0026F72F /* Bolts.framework in Frameworks */,
+				413F1CE61E8CBDD10026F72F /* FBSDKCoreKit.framework in Frameworks */,
+				413F1CE81E8CBDDC0026F72F /* FBSDKLoginKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		413F1CBF1E8CBAAB0026F72F = {
+			isa = PBXGroup;
+			children = (
+				413F1CE21E8CBD9F0026F72F /* Frameworks */,
+				413F1CCA1E8CBAAB0026F72F /* Gori */,
+				413F1CC91E8CBAAB0026F72F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		413F1CC91E8CBAAB0026F72F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				413F1CC81E8CBAAB0026F72F /* Gori.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		413F1CCA1E8CBAAB0026F72F /* Gori */ = {
+			isa = PBXGroup;
+			children = (
+				41C42C8F1E8E334B00B8A49B /* AMSlideMenu */,
+				413F1CCE1E8CBAAB0026F72F /* AppDelegate.h */,
+				413F1CCF1E8CBAAB0026F72F /* AppDelegate.m */,
+				413F1CD11E8CBAAB0026F72F /* ViewController.h */,
+				413F1CD21E8CBAAB0026F72F /* ViewController.m */,
+				413F1CEB1E8CC87C0026F72F /* MainViewController.h */,
+				413F1CEC1E8CC87C0026F72F /* MainViewController.m */,
+				41C42C971E8E336600B8A49B /* MainVC.h */,
+				41C42C981E8E336600B8A49B /* MainVC.m */,
+				41C42C9C1E8E33AD00B8A49B /* LoginViewController.h */,
+				41C42C9D1E8E33AD00B8A49B /* LoginViewController.m */,
+				41C42C9A1E8E338500B8A49B /* Main.storyboard */,
+				413F1CD71E8CBAAB0026F72F /* Assets.xcassets */,
+				413F1CD91E8CBAAB0026F72F /* LaunchScreen.storyboard */,
+				413F1CDC1E8CBAAB0026F72F /* Info.plist */,
+				413F1CCB1E8CBAAB0026F72F /* Supporting Files */,
+			);
+			path = Gori;
+			sourceTree = "<group>";
+		};
+		413F1CCB1E8CBAAB0026F72F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				41C42C9F1E8E33E800B8A49B /* icon-menu.png */,
+				41C42CA01E8E33E800B8A49B /* icon-menu@2x.png */,
+				413F1CCC1E8CBAAB0026F72F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		413F1CE21E8CBD9F0026F72F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				413F1CE91E8CBDE60026F72F /* FBSDKShareKit.framework */,
+				413F1CE71E8CBDDC0026F72F /* FBSDKLoginKit.framework */,
+				413F1CE51E8CBDD10026F72F /* FBSDKCoreKit.framework */,
+				413F1CE31E8CBDBD0026F72F /* Bolts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41C42C8F1E8E334B00B8A49B /* AMSlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				41C42C801E8E334B00B8A49B /* AMSlideMenuContentSegue.h */,
+				41C42C811E8E334B00B8A49B /* AMSlideMenuContentSegue.m */,
+				41C42C821E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.h */,
+				41C42C831E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.m */,
+				41C42C841E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.h */,
+				41C42C851E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.m */,
+				41C42C861E8E334B00B8A49B /* AMSlideMenuMainViewController.h */,
+				41C42C871E8E334B00B8A49B /* AMSlideMenuMainViewController.m */,
+				41C42C881E8E334B00B8A49B /* AMSlideMenuProtocols.h */,
+				41C42C891E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.h */,
+				41C42C8A1E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.m */,
+				41C42C8B1E8E334B00B8A49B /* AMSlideMenuRightTableViewController.h */,
+				41C42C8C1E8E334B00B8A49B /* AMSlideMenuRightTableViewController.m */,
+				41C42C8D1E8E334B00B8A49B /* UIViewController+AMSlideMenu.h */,
+				41C42C8E1E8E334B00B8A49B /* UIViewController+AMSlideMenu.m */,
+			);
+			name = AMSlideMenu;
+			path = ../../AMSlideSample/AMSlideSample/AMSlideMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		413F1CC71E8CBAAB0026F72F /* Gori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 413F1CDF1E8CBAAB0026F72F /* Build configuration list for PBXNativeTarget "Gori" */;
+			buildPhases = (
+				74312D9B45F8752E581EEF55 /* [CP] Check Pods Manifest.lock */,
+				413F1CC41E8CBAAB0026F72F /* Sources */,
+				413F1CC51E8CBAAB0026F72F /* Frameworks */,
+				413F1CC61E8CBAAB0026F72F /* Resources */,
+				7A00D0DFA2E973BB811A4160 /* [CP] Embed Pods Frameworks */,
+				68412C84065E39FB74B96A3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gori;
+			productName = Gori;
+			productReference = 413F1CC81E8CBAAB0026F72F /* Gori.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		413F1CC01E8CBAAB0026F72F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = fornew21c;
+				TargetAttributes = {
+					413F1CC71E8CBAAB0026F72F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 95Q6A6VBQ7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 413F1CC31E8CBAAB0026F72F /* Build configuration list for PBXProject "Gori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 413F1CBF1E8CBAAB0026F72F;
+			productRefGroup = 413F1CC91E8CBAAB0026F72F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				413F1CC71E8CBAAB0026F72F /* Gori */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		413F1CC61E8CBAAB0026F72F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C42C9B1E8E338500B8A49B /* Main.storyboard in Resources */,
+				413F1CDB1E8CBAAB0026F72F /* LaunchScreen.storyboard in Resources */,
+				41C42CA21E8E33E800B8A49B /* icon-menu@2x.png in Resources */,
+				413F1CD81E8CBAAB0026F72F /* Assets.xcassets in Resources */,
+				41C42CA11E8E33E800B8A49B /* icon-menu.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68412C84065E39FB74B96A3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gori/Pods-Gori-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74312D9B45F8752E581EEF55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7A00D0DFA2E973BB811A4160 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gori/Pods-Gori-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		413F1CC41E8CBAAB0026F72F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C42C961E8E334B00B8A49B /* UIViewController+AMSlideMenu.m in Sources */,
+				41C42C941E8E334B00B8A49B /* AMSlideMenuRightMenuSegue.m in Sources */,
+				41C42C9E1E8E33AD00B8A49B /* LoginViewController.m in Sources */,
+				41C42C901E8E334B00B8A49B /* AMSlideMenuContentSegue.m in Sources */,
+				413F1CD31E8CBAAB0026F72F /* ViewController.m in Sources */,
+				41C42C951E8E334B00B8A49B /* AMSlideMenuRightTableViewController.m in Sources */,
+				41C42C931E8E334B00B8A49B /* AMSlideMenuMainViewController.m in Sources */,
+				413F1CD01E8CBAAB0026F72F /* AppDelegate.m in Sources */,
+				413F1CCD1E8CBAAB0026F72F /* main.m in Sources */,
+				41C42C921E8E334B00B8A49B /* AMSlideMenuLeftTableViewController.m in Sources */,
+				41C42C991E8E336600B8A49B /* MainVC.m in Sources */,
+				41C42C911E8E334B00B8A49B /* AMSlideMenuLeftMenuSegue.m in Sources */,
+				413F1CED1E8CC87C0026F72F /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		413F1CD91E8CBAAB0026F72F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				413F1CDA1E8CBAAB0026F72F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		413F1CDD1E8CBAAB0026F72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		413F1CDE1E8CBAAB0026F72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		413F1CE01E8CBAAB0026F72F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Q6A6VBQ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Gori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fornew21c.Gori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		413F1CE11E8CBAAB0026F72F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95Q6A6VBQ7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Gori/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fornew21c.Gori;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		413F1CC31E8CBAAB0026F72F /* Build configuration list for PBXProject "Gori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413F1CDD1E8CBAAB0026F72F /* Debug */,
+				413F1CDE1E8CBAAB0026F72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		413F1CDF1E8CBAAB0026F72F /* Build configuration list for PBXNativeTarget "Gori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				413F1CE01E8CBAAB0026F72F /* Debug */,
+				413F1CE11E8CBAAB0026F72F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 413F1CC01E8CBAAB0026F72F /* Project object */;
+}

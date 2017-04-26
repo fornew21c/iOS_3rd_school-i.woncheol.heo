@@ -17,6 +17,7 @@
 		4103E7C61E691BE400D3ACBE /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4103E7C51E691BE400D3ACBE /* DataCenter.m */; };
 		4103E7FA1E6953C300D3ACBE /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4103E7F81E6953C300D3ACBE /* AddFriendViewController.m */; };
 		4103E7FB1E6953C300D3ACBE /* AddFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4103E7F91E6953C300D3ACBE /* AddFriendViewController.xib */; };
+		41FBDEB11EADE3AB0074167E /* location.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41FBDEB01EADE3AB0074167E /* location.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4103E7F71E6953C300D3ACBE /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
 		4103E7F81E6953C300D3ACBE /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
 		4103E7F91E6953C300D3ACBE /* AddFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriendViewController.xib; sourceTree = "<group>"; };
+		41FBDEB01EADE3AB0074167E /* location.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = location.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				4103E7B91E690AFC00D3ACBE /* LaunchScreen.storyboard */,
 				4103E7C21E690B5000D3ACBE /* Sample.plist */,
 				4103E7BC1E690AFC00D3ACBE /* Info.plist */,
+				41FBDEB01EADE3AB0074167E /* location.plist */,
 				4103E7AB1E690AFC00D3ACBE /* Supporting Files */,
 			);
 			path = PlistTest;
@@ -159,6 +162,7 @@
 				4103E7B81E690AFC00D3ACBE /* Assets.xcassets in Resources */,
 				4103E7B61E690AFC00D3ACBE /* Main.storyboard in Resources */,
 				4103E7FB1E6953C300D3ACBE /* AddFriendViewController.xib in Resources */,
+				41FBDEB11EADE3AB0074167E /* location.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +334,7 @@
 				4103E7C11E690AFC00D3ACBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

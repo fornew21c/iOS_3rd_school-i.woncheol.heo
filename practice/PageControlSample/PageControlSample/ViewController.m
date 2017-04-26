@@ -29,7 +29,7 @@
     self.scrollView.delegate = self;
     [self.view addSubview:self.scrollView];
     
-    NSMutableArray *views;
+    NSMutableArray<UIView *> *views;
     //views addObject:<#(nonnull id)#>
     for(NSUInteger i = 0; i < cnt; i++) {
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.width*i, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
@@ -64,14 +64,16 @@
     
     
     
-    [self.view addSubview:self.scrollView];
+//    [self.view addSubview:self.scrollView];
     
-//    self.page = [[UIPageControl alloc] initWithFrame:CGRectMake(150, self.scrollView.frame.size.height, 100, 30)];
-//    //page.backgroundColor = [UIColor blackColor];
-//    self.page.numberOfPages = 3;
-//    self.page.currentPage = 0;
-//    [self.page addTarget:self action:@selector(pageChanged:) forControlEvents:UIControlEventValueChanged];
-//    [self.view addSubview:self.page];
+    self.page = [[UIPageControl alloc] initWithFrame:CGRectMake(150, self.scrollView.frame.size.height, 100, 30)];
+    //page.backgroundColor = [UIColor blackColor];
+    self.page.numberOfPages = 3;
+    self.page.currentPage = 0;
+    [self.page addTarget:self action:@selector(pageChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:self.page];
+    
+
     
     
    
