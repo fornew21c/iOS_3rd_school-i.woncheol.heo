@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+IB_DESIGNABLE
 
 @interface ViewController ()
 

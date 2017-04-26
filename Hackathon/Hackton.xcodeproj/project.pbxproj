@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F7BF617B1C74583B93BF4B6 /* libPods-Hackton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C94B5A2D12D7BE5F5A4372DB /* libPods-Hackton.a */; };
+		442F5B831E72D19900CA9637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F5B821E72D19900CA9637 /* main.m */; };
+		442F5B861E72D19900CA9637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F5B851E72D19900CA9637 /* AppDelegate.m */; };
+		442F5B891E72D19900CA9637 /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 442F5B881E72D19900CA9637 /* SubViewController.m */; };
+		442F5B8C1E72D19900CA9637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F5B8A1E72D19900CA9637 /* Main.storyboard */; };
+		442F5B8E1E72D19900CA9637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442F5B8D1E72D19900CA9637 /* Assets.xcassets */; };
+		442F5B911E72D19900CA9637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442F5B8F1E72D19900CA9637 /* LaunchScreen.storyboard */; };
+		442F5B991E72D1E800CA9637 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 442F5B981E72D1E800CA9637 /* GoogleService-Info.plist */; };
+		44C12C101E72FF320019A91B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C0F1E72FF320019A91B /* DetailViewController.m */; };
+		44C12C131E72FFEA0019A91B /* CustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C121E72FFEA0019A91B /* CustomHeaderView.m */; };
+		44C12C171E73111B0019A91B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C161E73111B0019A91B /* DataCenter.m */; };
+		44C12C191E741A420019A91B /* cubeMoa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C181E741A420019A91B /* cubeMoa.jpg */; };
+		44C12C1F1E7422650019A91B /* HeaderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C1E1E7422650019A91B /* HeaderCollectionViewCell.m */; };
+		44C12C241E7542BE0019A91B /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C12C231E7542BE0019A91B /* Mapbox.framework */; };
+		44C12C251E7542BE0019A91B /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44C12C231E7542BE0019A91B /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		44C12C2A1E75476F0019A91B /* InsertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C291E75476F0019A91B /* InsertViewController.m */; };
+		44C12C2E1E7567DD0019A91B /* SubCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C2D1E7567DD0019A91B /* SubCustomTableViewCell.m */; };
+		44C12C311E759FBB0019A91B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C301E759FBB0019A91B /* LoginViewController.m */; };
+		44C12C341E759FD00019A91B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C331E759FD00019A91B /* SignUpViewController.m */; };
+		44C12C361E75C6940019A91B /* free.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C351E75C6940019A91B /* free.jpg */; };
+		44C12C631E7659F80019A91B /* SettingCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C601E7659F80019A91B /* SettingCustomTableViewCell.m */; };
+		44C12C641E7659F80019A91B /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C621E7659F80019A91B /* SettingViewController.m */; };
+		44C12C6B1E765BAB0019A91B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C661E765BAB0019A91B /* ViewController.m */; };
+		44C12C6D1E765BAB0019A91B /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 44C12C6A1E765BAB0019A91B /* CustomTableViewCell.m */; };
+		44C12C7A1E7660F00019A91B /* hamberg_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C701E7660F00019A91B /* hamberg_360.png */; };
+		44C12C7B1E7660F00019A91B /* jeju1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C711E7660F00019A91B /* jeju1.jpg */; };
+		44C12C7C1E7660F00019A91B /* jeju2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C721E7660F00019A91B /* jeju2.jpg */; };
+		44C12C7D1E7660F00019A91B /* jeju3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C731E7660F00019A91B /* jeju3.jpg */; };
+		44C12C7E1E7660F00019A91B /* list_360.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C741E7660F00019A91B /* list_360.png */; };
+		44C12C7F1E7660F00019A91B /* list1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C751E7660F00019A91B /* list1.jpg */; };
+		44C12C801E7660F00019A91B /* list2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C761E7660F00019A91B /* list2.jpg */; };
+		44C12C811E7660F00019A91B /* list3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C771E7660F00019A91B /* list3.jpg */; };
+		44C12C821E7660F00019A91B /* list4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C781E7660F00019A91B /* list4.jpg */; };
+		44C12C831E7660F00019A91B /* Onecolumn.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C791E7660F00019A91B /* Onecolumn.png */; };
+		44C12C881E76844A0019A91B /* TemMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C871E76844A0019A91B /* TemMain.storyboard */; };
+		44C12C8A1E76A7E80019A91B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C891E76A7E80019A91B /* Login.storyboard */; };
+		44C12C8C1E76BDF30019A91B /* example.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 44C12C8B1E76BDF30019A91B /* example.geojson */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44C12C261E7542BE0019A91B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				44C12C251E7542BE0019A91B /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3DAFF75DAF817BC5968C755F /* Pods-Hackton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackton.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hackton/Pods-Hackton.release.xcconfig"; sourceTree = "<group>"; };
+		442F5B7E1E72D19900CA9637 /* Hackton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hackton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		442F5B821E72D19900CA9637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		442F5B841E72D19900CA9637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		442F5B851E72D19900CA9637 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		442F5B871E72D19900CA9637 /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		442F5B881E72D19900CA9637 /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
+		442F5B8B1E72D19900CA9637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		442F5B8D1E72D19900CA9637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		442F5B901E72D19900CA9637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		442F5B921E72D19900CA9637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442F5B981E72D1E800CA9637 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44C12C0E1E72FF320019A91B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		44C12C0F1E72FF320019A91B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		44C12C111E72FFEA0019A91B /* CustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeaderView.h; sourceTree = "<group>"; };
+		44C12C121E72FFEA0019A91B /* CustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeaderView.m; sourceTree = "<group>"; };
+		44C12C151E73111B0019A91B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		44C12C161E73111B0019A91B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		44C12C181E741A420019A91B /* cubeMoa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cubeMoa.jpg; sourceTree = "<group>"; };
+		44C12C1D1E7422650019A91B /* HeaderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionViewCell.h; sourceTree = "<group>"; };
+		44C12C1E1E7422650019A91B /* HeaderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionViewCell.m; sourceTree = "<group>"; };
+		44C12C231E7542BE0019A91B /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		44C12C281E75476F0019A91B /* InsertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertViewController.h; sourceTree = "<group>"; };
+		44C12C291E75476F0019A91B /* InsertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertViewController.m; sourceTree = "<group>"; };
+		44C12C2C1E7567DD0019A91B /* SubCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubCustomTableViewCell.h; sourceTree = "<group>"; };
+		44C12C2D1E7567DD0019A91B /* SubCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubCustomTableViewCell.m; sourceTree = "<group>"; };
+		44C12C2F1E759FBB0019A91B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		44C12C301E759FBB0019A91B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		44C12C321E759FD00019A91B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		44C12C331E759FD00019A91B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		44C12C351E75C6940019A91B /* free.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = free.jpg; sourceTree = "<group>"; };
+		44C12C5F1E7659F80019A91B /* SettingCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingCustomTableViewCell.h; sourceTree = "<group>"; };
+		44C12C601E7659F80019A91B /* SettingCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingCustomTableViewCell.m; sourceTree = "<group>"; };
+		44C12C611E7659F80019A91B /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		44C12C621E7659F80019A91B /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		44C12C651E765BAB0019A91B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		44C12C661E765BAB0019A91B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		44C12C691E765BAB0019A91B /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		44C12C6A1E765BAB0019A91B /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		44C12C701E7660F00019A91B /* hamberg_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamberg_360.png; sourceTree = "<group>"; };
+		44C12C711E7660F00019A91B /* jeju1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeju1.jpg; sourceTree = "<group>"; };
+		44C12C721E7660F00019A91B /* jeju2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeju2.jpg; sourceTree = "<group>"; };
+		44C12C731E7660F00019A91B /* jeju3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jeju3.jpg; sourceTree = "<group>"; };
+		44C12C741E7660F00019A91B /* list_360.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_360.png; sourceTree = "<group>"; };
+		44C12C751E7660F00019A91B /* list1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = list1.jpg; sourceTree = "<group>"; };
+		44C12C761E7660F00019A91B /* list2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = list2.jpg; sourceTree = "<group>"; };
+		44C12C771E7660F00019A91B /* list3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = list3.jpg; sourceTree = "<group>"; };
+		44C12C781E7660F00019A91B /* list4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = list4.jpg; sourceTree = "<group>"; };
+		44C12C791E7660F00019A91B /* Onecolumn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Onecolumn.png; sourceTree = "<group>"; };
+		44C12C871E76844A0019A91B /* TemMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TemMain.storyboard; sourceTree = "<group>"; };
+		44C12C891E76A7E80019A91B /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		44C12C8B1E76BDF30019A91B /* example.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.geojson; sourceTree = "<group>"; };
+		BAD2ACDEC529AAC8A0517FE5 /* Pods-Hackton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hackton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hackton/Pods-Hackton.debug.xcconfig"; sourceTree = "<group>"; };
+		C94B5A2D12D7BE5F5A4372DB /* libPods-Hackton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hackton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		442F5B7B1E72D19900CA9637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7BF617B1C74583B93BF4B6 /* libPods-Hackton.a in Frameworks */,
+				44C12C241E7542BE0019A91B /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		442F5B751E72D19900CA9637 = {
+			isa = PBXGroup;
+			children = (
+				44C12C231E7542BE0019A91B /* Mapbox.framework */,
+				442F5B801E72D19900CA9637 /* Hackton */,
+				442F5B7F1E72D19900CA9637 /* Products */,
+				C6DD6250CDC37DAB888A6E34 /* Pods */,
+				AC39706B4FAEA4050DFECC91 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		442F5B7F1E72D19900CA9637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				442F5B7E1E72D19900CA9637 /* Hackton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		442F5B801E72D19900CA9637 /* Hackton */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C151E73111B0019A91B /* DataCenter.h */,
+				44C12C161E73111B0019A91B /* DataCenter.m */,
+				442F5B841E72D19900CA9637 /* AppDelegate.h */,
+				442F5B851E72D19900CA9637 /* AppDelegate.m */,
+				44C12C851E766C680019A91B /* HambergMenu */,
+				44C12C861E766C8F0019A91B /* MainMenu */,
+				44C12C5B1E7659840019A91B /* SubVC */,
+				44C12C841E7660F50019A91B /* image */,
+				442F5B8D1E72D19900CA9637 /* Assets.xcassets */,
+				442F5B8F1E72D19900CA9637 /* LaunchScreen.storyboard */,
+				442F5B921E72D19900CA9637 /* Info.plist */,
+				442F5B811E72D19900CA9637 /* Supporting Files */,
+			);
+			path = Hackton;
+			sourceTree = "<group>";
+		};
+		442F5B811E72D19900CA9637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				442F5B821E72D19900CA9637 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44C12C0D1E72FEF80019A91B /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C0E1E72FF320019A91B /* DetailViewController.h */,
+				44C12C0F1E72FF320019A91B /* DetailViewController.m */,
+				44C12C2B1E7567B30019A91B /* CustomCell */,
+				44C12C141E72FFF10019A91B /* CustomHeader */,
+				44C12C271E75439E0019A91B /* CustomFooter */,
+			);
+			name = DetailVC;
+			sourceTree = "<group>";
+		};
+		44C12C141E72FFF10019A91B /* CustomHeader */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C111E72FFEA0019A91B /* CustomHeaderView.h */,
+				44C12C121E72FFEA0019A91B /* CustomHeaderView.m */,
+				44C12C1D1E7422650019A91B /* HeaderCollectionViewCell.h */,
+				44C12C1E1E7422650019A91B /* HeaderCollectionViewCell.m */,
+				44C12C181E741A420019A91B /* cubeMoa.jpg */,
+			);
+			name = CustomHeader;
+			sourceTree = "<group>";
+		};
+		44C12C271E75439E0019A91B /* CustomFooter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomFooter;
+			sourceTree = "<group>";
+		};
+		44C12C2B1E7567B30019A91B /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C2C1E7567DD0019A91B /* SubCustomTableViewCell.h */,
+				44C12C2D1E7567DD0019A91B /* SubCustomTableViewCell.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		44C12C371E75CB6A0019A91B /* InsertVC */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C2F1E759FBB0019A91B /* LoginViewController.h */,
+				44C12C301E759FBB0019A91B /* LoginViewController.m */,
+				44C12C321E759FD00019A91B /* SignUpViewController.h */,
+				44C12C331E759FD00019A91B /* SignUpViewController.m */,
+				44C12C281E75476F0019A91B /* InsertViewController.h */,
+				44C12C291E75476F0019A91B /* InsertViewController.m */,
+				44C12C891E76A7E80019A91B /* Login.storyboard */,
+			);
+			name = InsertVC;
+			sourceTree = "<group>";
+		};
+		44C12C5B1E7659840019A91B /* SubVC */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C0D1E72FEF80019A91B /* DetailVC */,
+				442F5B981E72D1E800CA9637 /* GoogleService-Info.plist */,
+				44C12C871E76844A0019A91B /* TemMain.storyboard */,
+				442F5B8A1E72D19900CA9637 /* Main.storyboard */,
+				44C12C371E75CB6A0019A91B /* InsertVC */,
+				44C12C351E75C6940019A91B /* free.jpg */,
+			);
+			name = SubVC;
+			sourceTree = "<group>";
+		};
+		44C12C841E7660F50019A91B /* image */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C8B1E76BDF30019A91B /* example.geojson */,
+				44C12C701E7660F00019A91B /* hamberg_360.png */,
+				44C12C711E7660F00019A91B /* jeju1.jpg */,
+				44C12C721E7660F00019A91B /* jeju2.jpg */,
+				44C12C731E7660F00019A91B /* jeju3.jpg */,
+				44C12C741E7660F00019A91B /* list_360.png */,
+				44C12C751E7660F00019A91B /* list1.jpg */,
+				44C12C761E7660F00019A91B /* list2.jpg */,
+				44C12C771E7660F00019A91B /* list3.jpg */,
+				44C12C781E7660F00019A91B /* list4.jpg */,
+				44C12C791E7660F00019A91B /* Onecolumn.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		44C12C851E766C680019A91B /* HambergMenu */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C5F1E7659F80019A91B /* SettingCustomTableViewCell.h */,
+				44C12C601E7659F80019A91B /* SettingCustomTableViewCell.m */,
+				44C12C611E7659F80019A91B /* SettingViewController.h */,
+				44C12C621E7659F80019A91B /* SettingViewController.m */,
+			);
+			name = HambergMenu;
+			sourceTree = "<group>";
+		};
+		44C12C861E766C8F0019A91B /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				44C12C651E765BAB0019A91B /* ViewController.h */,
+				44C12C661E765BAB0019A91B /* ViewController.m */,
+				44C12C691E765BAB0019A91B /* CustomTableViewCell.h */,
+				44C12C6A1E765BAB0019A91B /* CustomTableViewCell.m */,
+				442F5B871E72D19900CA9637 /* SubViewController.h */,
+				442F5B881E72D19900CA9637 /* SubViewController.m */,
+			);
+			name = MainMenu;
+			sourceTree = "<group>";
+		};
+		AC39706B4FAEA4050DFECC91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94B5A2D12D7BE5F5A4372DB /* libPods-Hackton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6DD6250CDC37DAB888A6E34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAD2ACDEC529AAC8A0517FE5 /* Pods-Hackton.debug.xcconfig */,
+				3DAFF75DAF817BC5968C755F /* Pods-Hackton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		442F5B7D1E72D19900CA9637 /* Hackton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442F5B951E72D19900CA9637 /* Build configuration list for PBXNativeTarget "Hackton" */;
+			buildPhases = (
+				455D942BDFA228815EDFE461 /* [CP] Check Pods Manifest.lock */,
+				442F5B7A1E72D19900CA9637 /* Sources */,
+				442F5B7B1E72D19900CA9637 /* Frameworks */,
+				442F5B7C1E72D19900CA9637 /* Resources */,
+				AB3246EFA0B26039E9E1929A /* [CP] Embed Pods Frameworks */,
+				4CD91F4814DB6EF98A4254B1 /* [CP] Copy Pods Resources */,
+				44C12C261E7542BE0019A91B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hackton;
+			productName = Hackton;
+			productReference = 442F5B7E1E72D19900CA9637 /* Hackton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		442F5B761E72D19900CA9637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KimYunseo;
+				TargetAttributes = {
+					442F5B7D1E72D19900CA9637 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L39DBYBAEK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 442F5B791E72D19900CA9637 /* Build configuration list for PBXProject "Hackton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 442F5B751E72D19900CA9637;
+			productRefGroup = 442F5B7F1E72D19900CA9637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				442F5B7D1E72D19900CA9637 /* Hackton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		442F5B7C1E72D19900CA9637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C12C7A1E7660F00019A91B /* hamberg_360.png in Resources */,
+				442F5B911E72D19900CA9637 /* LaunchScreen.storyboard in Resources */,
+				44C12C7E1E7660F00019A91B /* list_360.png in Resources */,
+				44C12C801E7660F00019A91B /* list2.jpg in Resources */,
+				44C12C811E7660F00019A91B /* list3.jpg in Resources */,
+				44C12C361E75C6940019A91B /* free.jpg in Resources */,
+				442F5B991E72D1E800CA9637 /* GoogleService-Info.plist in Resources */,
+				44C12C821E7660F00019A91B /* list4.jpg in Resources */,
+				44C12C8C1E76BDF30019A91B /* example.geojson in Resources */,
+				44C12C8A1E76A7E80019A91B /* Login.storyboard in Resources */,
+				442F5B8E1E72D19900CA9637 /* Assets.xcassets in Resources */,
+				44C12C7F1E7660F00019A91B /* list1.jpg in Resources */,
+				44C12C831E7660F00019A91B /* Onecolumn.png in Resources */,
+				44C12C7B1E7660F00019A91B /* jeju1.jpg in Resources */,
+				44C12C7D1E7660F00019A91B /* jeju3.jpg in Resources */,
+				44C12C191E741A420019A91B /* cubeMoa.jpg in Resources */,
+				44C12C881E76844A0019A91B /* TemMain.storyboard in Resources */,
+				44C12C7C1E7660F00019A91B /* jeju2.jpg in Resources */,
+				442F5B8C1E72D19900CA9637 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		455D942BDFA228815EDFE461 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CD91F4814DB6EF98A4254B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hackton/Pods-Hackton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB3246EFA0B26039E9E1929A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hackton/Pods-Hackton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		442F5B7A1E72D19900CA9637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C12C6D1E765BAB0019A91B /* CustomTableViewCell.m in Sources */,
+				44C12C2A1E75476F0019A91B /* InsertViewController.m in Sources */,
+				44C12C631E7659F80019A91B /* SettingCustomTableViewCell.m in Sources */,
+				442F5B891E72D19900CA9637 /* SubViewController.m in Sources */,
+				44C12C341E759FD00019A91B /* SignUpViewController.m in Sources */,
+				442F5B861E72D19900CA9637 /* AppDelegate.m in Sources */,
+				442F5B831E72D19900CA9637 /* main.m in Sources */,
+				44C12C131E72FFEA0019A91B /* CustomHeaderView.m in Sources */,
+				44C12C1F1E7422650019A91B /* HeaderCollectionViewCell.m in Sources */,
+				44C12C6B1E765BAB0019A91B /* ViewController.m in Sources */,
+				44C12C171E73111B0019A91B /* DataCenter.m in Sources */,
+				44C12C2E1E7567DD0019A91B /* SubCustomTableViewCell.m in Sources */,
+				44C12C311E759FBB0019A91B /* LoginViewController.m in Sources */,
+				44C12C101E72FF320019A91B /* DetailViewController.m in Sources */,
+				44C12C641E7659F80019A91B /* SettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		442F5B8A1E72D19900CA9637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F5B8B1E72D19900CA9637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		442F5B8F1E72D19900CA9637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				442F5B901E72D19900CA9637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		442F5B931E72D19900CA9637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		442F5B941E72D19900CA9637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		442F5B961E72D19900CA9637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAD2ACDEC529AAC8A0517FE5 /* Pods-Hackton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L39DBYBAEK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hackton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KimYunseo.example.Hackton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		442F5B971E72D19900CA9637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAFF75DAF817BC5968C755F /* Pods-Hackton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L39DBYBAEK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hackton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KimYunseo.example.Hackton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		442F5B791E72D19900CA9637 /* Build configuration list for PBXProject "Hackton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F5B931E72D19900CA9637 /* Debug */,
+				442F5B941E72D19900CA9637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442F5B951E72D19900CA9637 /* Build configuration list for PBXNativeTarget "Hackton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442F5B961E72D19900CA9637 /* Debug */,
+				442F5B971E72D19900CA9637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 442F5B761E72D19900CA9637 /* Project object */;
+}
